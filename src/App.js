@@ -78,6 +78,52 @@ multiply(5, 3);  // 15
 multiply("5"); 
 
 
+// Übung 4.1
+
+const string_verbinden = (wordOne, wordTwo) => {
+    return `${wordOne} ${wordTwo}`;
+};
+console.log(string_verbinden("hallo", "welt"))
+
+
+//Übung 4.2
+
+const prüfen =(parameter1) =>{
+  if (parameter1 === 0){
+  return `Die Zahl ist Null`}
+  else if (parameter1 > 0){
+    return `Die Zahl ist grösser als Null`
+  } else {return `Die Zahl ist kleiner als Null`}
+};
+
+console.log(prüfen(4))
+
+//Übung 4.3
+
+const grössere_wert = (wert1, wert2) => { 
+  return wert1 < wert2 ? wert2 : wert1
+}
+
+console.log(grössere_wert(30,3))
+
+//Übung 5.1
+
+const array_zahlen = [1, 7, 66, 45, 123]
+
+const array_multi = array_zahlen.map(zahl => zahl * 3)
+console.log(array_multi)
+
+const array_index = array_zahlen.map((zahl, index) => zahl * index)
+console.log(array_index)
+
+
+//Übung 5.2
+
+const array_username = ["Livia", "Vanessa", "Sophia", "Loris", "Melanie"]
+
+const name_filtered = array_username.filter((username) => username.includes("a"))
+console.log(name_filtered)
+
 
 // array
 
